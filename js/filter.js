@@ -210,7 +210,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
                 <div class="texteventcard-container">
                     <div class="event-date-container">
-                        <img src="/icons/calendarIcon.svg" alt="Calendar Icon">
+                        <img src="icons/calendarIcon.svg" alt="Calendar Icon">
                         <p>${formatDate(event.date)}</p>
                     </div>
                     <h3 class="event-title">${event.title}</h3>
