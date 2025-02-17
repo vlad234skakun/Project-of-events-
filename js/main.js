@@ -215,11 +215,11 @@ document.addEventListener("DOMContentLoaded", () => {
                         ${event.type === "online" ? event.description : `${event.description} (${event.distance} km)`}
                     </p>
                     <div class="event-date-container">
-                        <img src="/icons/calendarIcon.svg" alt="Calendar Icon">
+                        <img src="icons/calendarIcon.svg" alt="Calendar Icon">
                         <p>${formatDate(event.date)}</p>
                     </div>
                     <div class="free-text-container">
-                        <img src="/icons/tickIcon.svg" alt="Free Icon">
+                        <img src="icons/tickIcon.svg" alt="Free Icon">
                         <p class="free-text">Free</p>
                     </div>
                 </div>
