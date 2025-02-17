@@ -1,0 +1,182 @@
+// Стили для навбара
+
+@use 'variables' as v;
+
+
+
+// стилизвция поиска и кнопки поиска
+
+
+header {
+    padding: 15px 20px;
+}
+
+nav { 
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-navcontainer {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.right-navcontainer {
+    display: flex;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    height: 42px;
+    // max-width: 800px;
+    width: 100%;
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+}
+.search-container {
+    // border: 1px solid #000;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.result-container {
+    height: 100%;
+    // border: 1px solid #000;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    border-left: 1px solid #D9D9D9;
+}
+
+.result-container>button {
+    border: none;
+    border-radius: 0px 8px 8px 0px;
+}
+
+.input-search {
+    width: 100%;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    font-family: v.$font-family;
+}
+
+.icon-logo {
+    width: 94.34px;
+    height: 34px;
+}
+
+.search-results {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px 0px 15px;
+    font-family: v.$font-family;
+}
+
+.button-search {
+    width: 42px;
+    height: 42px;
+    background-color: v.$orange-Button-Color;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-search:hover {
+    background-color: #a02800; /* Фон меняется при наведении */
+}
+
+.space-result {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+}
+
+.icon-search {
+    height: 15px;
+    width: 15px;
+}
+
+.nav-auth {
+    display: flex;
+    margin-left: auto;
+}
+
+// стилизация выбора языка
+
+.language-selection {
+    border: none;
+    outline: none;
+    appearance: none; // Убирает стандартное оформление (работает в большинстве браузеров)
+    -webkit-appearance: none; // Для Safari
+    -moz-appearance: none; // Для Firefox
+    background: transparent; /* Убирает фон */
+    font-size: 16px;
+    cursor: pointer;
+    padding-right: 20px; /* Отступ для стрелки */
+}
+
+/* Убираем стрелку в Edge */
+.language-selection::-ms-expand {
+    display: none;
+}
+
+.language-container {
+    display: flex;
+    align-items: center;
+    gap: 5px; // Отступ между иконкой и текстом
+    cursor: pointer; // Чтобы казалось, что всё кликабельно
+}
+
+.icon-earth {
+    width: 16px; // Делаем планетку маленькой
+    height: 16px;
+}
+
+.language-selection {
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+// стилизация кнопок регистрации и входа
+
+.nav-auth {
+    display: flex;
+    gap: 20px;
+}
+
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: v.$font-family;
+    cursor: pointer;
+
+}
+
+.signup-container {
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: v.$blueButtonColor;
+padding: 8px 16px;
+border-radius: 8px;
+color: white;
+font-family: v.$font-family;
+cursor: pointer;
+}
+
+

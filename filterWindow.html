@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/filterWindow.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meetup</title>
+</head>
+
+<body>
+    <header>
+        <!-- создаем шапку  -->
+        <nav>
+            <div class="left-navcontainer">
+                <a href="index.html"><img class="icon-logo" src="img/Logo.svg" alt=""></a>
+                <form action="">
+                    <div class="search-container">
+                        <div class="space-result"><img class="icon-search" src="icons/SearchIcongrey.svg" alt=""></div>
+                        <input class="input-search" type="text" placeholder="Search events">
+                    </div>
+                    <div class="result-container">
+                        <div id="search-results" class="search-results">
+                            <p></p>
+                        </div>
+                        <button class="button-search"><img class="icon-search" src="icons/SearchIcongreywhite.svg" alt=""></button>
+                    </div>
+                </form>
+            </div>
+            <div class="right-navcontainer">
+                <div class="nav-language">
+                    <label class="language-container">
+                        <img class="icon-earth" src="icons/earthIcon.svg" alt="Earth Icon">
+                        <select class="language-selection">
+                            <option value="ru">Русский</option>
+                            <option value="en">English</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="nav-auth">
+                    <div class="login-container"><a class="nav-login">log in</a></div>
+                    <div class="signup-container"><a class="nav-signup">Sign up</a></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="left-block">
+            <div class="Events">
+                <h1>Events near New York, NY</h1>
+                <a href="">Events</a>
+                    <!-- Контейнер с выпадающими списками фильтров -->
+                    <!-- Фильтрация -->
+                    <div class="filter-container">
+                        
+            
+                        <!-- Фильтр по типу мероприятия -->
+                        <select class="filter-select" data-filter="type">
+                            <option value="">Event Type</option>
+                            <option value="online">Online</option>
+                            <option value="offline">Offline</option>
+                        </select>
+            
+                        <!-- Фильтр по дистанции -->
+                        <select class="filter-select" data-filter="distance">
+                            <option value="">Distance</option>
+                            <option value="5">5 km</option>
+                            <option value="10">10 km</option>
+                            <option value="15">15 km</option>
+                            <option value="25">25 km</option>
+                            <option value="50">50 km</option>
+                            <option value="75">75 km</option>
+                            <option value="100">100 km</option>
+                        </select>
+            
+                        <!-- Фильтр по категории -->
+                        <select class="filter-select" data-filter="category">
+                            <option value="">Category</option>
+                            <option value="Social Activities">Social Activities</option>
+                            <option value="Hobbies and Passions">Hobbies and Passions</option>
+                            <option value="Health and Wellbeing">Health and Wellbeing</option>
+                            <option value="Business">Business</option>
+                            <option value="Technology">Technology</option>
+                        </select>
+
+                        <!-- Фильтр по дате -->
+                        <input type="date" class="filter-select" class="filter-button" data-filter="date" placeholder="Select Date">
+                    </div>
+            </div>
+            <div class="events-container">
+            </div>
+        </div>
+        <div class="right-block" class="hide-on-mobile" >
+            <div class="map">
+                <p>Find events near</p>
+                <h1>New York, NY</h1>
+                <div class="map-container">
+                    <a href=""><img src="img/map-thumbnail.jpg" alt=""></a>
+                    <button class="map-button">Browse in map<img src="icons/expandMapIcon.svg" alt=""></button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-block">
+            <div class="firtsfooter-block" >
+                <h3>Create your own Meetup group.</h3>
+                <button>Get Started</button>
+            </div>
+            <div class="linksfooter-container">
+                <div class="Your-Account">
+                    <h3 class="linksfooter-title">Your Account</h3>
+                    <a href="">Sign up</a>
+                    <a href="">Log in</a>
+                    <a href="">Help</a>
+                    <a href="">Become an Affiliate</a>
+                </div>
+                <div class="Discover">
+                    <h3 class="linksfooter-title">Discover</h3>
+                    <a href="">Groups</a>
+                    <a href="">Calendar</a>
+                    <a href="">Topics</a>
+                    <a href="">Cities</a>
+                    <a href="">Online Events</a>
+                    <a href="">Local Guides</a>
+                    <a href="">Make Friends</a>
+                </div>
+                <div class="Meetup">
+                    <h3 class="linksfooter-title">Meetup</h3>
+                    <a href="">About</a>
+                    <a href="">Blog</a>
+                    <a href="">Meetup Pro</a>
+                    <a href="">Careers</a>
+                    <a href="">Apps</a>
+                    <a href="">Podcast</a>
+                </div>
+            </div>
+            <div class="Followus-container">
+                <h3>Follow us</h3>
+                <div class="Followusicons-block">
+                    <div class="Followus-icons">
+                        <a href=""><img src="icons/FacebookSVG.svg" alt=""></a>
+                        <a href=""><img src="icons/TwitterSVG.svg" alt=""></a>
+                        <a href=""><img src="icons/YouTubeSVG.svg" alt=""></a>
+                        <a href=""><img src="icons/InstagramSVG.svg" alt=""></a>
+                        <a href=""><img src="icons/TikTokSVG.svg" alt=""></a>
+                    </div>
+                    <div class="Followus-img">
+                        <a href=""><img src="icons/Google Playdownload_en-US.svg.svg" alt=""></a>
+                        <a href=""><img src="icons/App Storedownload_en-US.svg.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Meetup</p>
+                <p>Terms of Service</p>
+                <p>Privacy Policy</p>
+                <p>Do Not Sell or Share My Personal Data</p>
+                <p>Cookie Policy</p>
+                <p>Help</p>
+            </div>
+        </div>
+    </footer>
+    <!-- <script type="module" src="/js/main.js"></script> -->
+    <script type="module" src="js/filter.js"></script>
+</body>
+
+</html>
