@@ -469,6 +469,12 @@ footer {
     padding: 10px 14px;
     background-color: transparent; /* Прозрачный фон */ /* Видимая граница */
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.firtsfooter-block button:hover {
+    background-color: #fff;
+    color: #000;
 }
 
 

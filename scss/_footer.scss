@@ -33,6 +33,12 @@ footer {
     padding: 10px 14px;
     background-color: transparent; /* Прозрачный фон */ /* Видимая граница */
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.firtsfooter-block button:hover {
+    background-color: #fff;
+    color: black;
 }
 
 
@@ -77,6 +83,11 @@ footer {
     line-height: 143%;
     color: #c5c4c4;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+.linksfooter-container a:hover {
+    color: #efefef;
 }
 
 .Followus-container {

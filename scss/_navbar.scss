@@ -92,7 +92,7 @@ form {
 }
 
 .button-search:hover {
-    background-color: #a02800; /* Фон меняется при наведении */
+    background-color: v.$hoverefectorange; /* Фон меняется при наведении */
 }
 
 .space-result {
@@ -177,6 +177,11 @@ border-radius: 8px;
 color: white;
 font-family: v.$font-family;
 cursor: pointer;
+transition: 0.3s;
+}
+
+.signup-container:hover { 
+    background-color: v.$hoverefect;
 }
 
 
